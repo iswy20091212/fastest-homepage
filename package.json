@@ -9,10 +9,11 @@
     "build": "node src/build.ts",
     "start": "node src/server.ts",
     "bench": "node src/bench.ts",
-    "typecheck": "tsc"
+    "typecheck": "tsc && tsc -p tsconfig.sw.json"
   },
   "devDependencies": {
     "@types/node": "^26.6.4",
+    "sharp": "^0.35.5",
     "typescript": "^7.0.2"
   }
 }
